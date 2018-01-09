@@ -13,6 +13,7 @@
 #include "AxOvkBase_OCX.h"
 #include <ExtCtrls.hpp>
 #include <OleCtrls.hpp>
+#include "AxOvkImage_OCX.h"
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -43,6 +44,11 @@ __published:	// IDE-managed Components
     TLabel *Label15;
     TLabel *Label16;
     TLabel *Label17;
+    TAxImageBW8 *AxImageBW84;
+    TAxImageIntegral *AxImageIntegral1;
+    TLabel *Label18;
+    TLabel *Label19;
+    TAxImageALops *AxImageALops1;
     void __fastcall FormCreate(TObject *Sender);
     void __fastcall Button1Click(TObject *Sender);
     void __fastcall AxAltairU1SurfaceFilled(TObject *Sender,
