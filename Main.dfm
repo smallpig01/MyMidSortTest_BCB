@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 351
   Top = 168
   Width = 1546
-  Height = 853
+  Height = 851
   Caption = 'Form1'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -80,7 +80,7 @@ object Form1: TForm1
   object Label7: TLabel
     Left = 656
     Top = 256
-    Width = 60
+    Width = 32
     Height = 13
     Alignment = taCenter
     Caption = 'Label7'
@@ -88,7 +88,7 @@ object Form1: TForm1
   object Label8: TLabel
     Left = 656
     Top = 272
-    Width = 60
+    Width = 32
     Height = 13
     Alignment = taCenter
     Caption = 'Label8'
@@ -96,7 +96,7 @@ object Form1: TForm1
   object Label9: TLabel
     Left = 656
     Top = 288
-    Width = 60
+    Width = 32
     Height = 13
     Alignment = taCenter
     Caption = 'Label9'
@@ -104,7 +104,7 @@ object Form1: TForm1
   object Label10: TLabel
     Left = 816
     Top = 256
-    Width = 60
+    Width = 32
     Height = 13
     Alignment = taCenter
     Caption = 'Label7'
@@ -112,7 +112,7 @@ object Form1: TForm1
   object Label11: TLabel
     Left = 816
     Top = 272
-    Width = 60
+    Width = 32
     Height = 13
     Alignment = taCenter
     Caption = 'Label8'
@@ -120,21 +120,21 @@ object Form1: TForm1
   object Label12: TLabel
     Left = 816
     Top = 288
-    Width = 60
+    Width = 32
     Height = 13
     Alignment = taCenter
     Caption = 'Label9'
   end
   object Label13: TLabel
-    Left = 360
-    Top = 288
+    Left = 328
+    Top = 304
     Width = 50
     Height = 13
     Caption = 'MyMidSort'
   end
   object Label14: TLabel
-    Left = 1128
-    Top = 288
+    Left = 1144
+    Top = 304
     Width = 47
     Height = 13
     Caption = 'QuickSort'
@@ -148,7 +148,7 @@ object Form1: TForm1
     Caption = 'FastCount'
   end
   object Label16: TLabel
-    Left = 670
+    Left = 654
     Top = 304
     Width = 32
     Height = 13
@@ -162,6 +162,22 @@ object Form1: TForm1
     Height = 13
     Alignment = taCenter
     Caption = 'Label9'
+  end
+  object Label18: TLabel
+    Left = 67
+    Top = 288
+    Width = 48
+    Height = 13
+    Alignment = taCenter
+    Caption = 'FastCount'
+  end
+  object Label19: TLabel
+    Left = 6
+    Top = 288
+    Width = 53
+    Height = 13
+    Alignment = taCenter
+    Caption = 'Error Count'
   end
   object AxAltairU1: TAxAltairU
     Left = 352
@@ -205,14 +221,14 @@ object Form1: TForm1
     OnClick = Button1Click
   end
   object AxImageBW82: TAxImageBW8
-    Left = 1136
-    Top = 256
+    Left = 1152
+    Top = 272
     Width = 30
     Height = 30
     TabOrder = 3
     ControlData = {
-      545046300C5456636C496D616765425738025F31044C65667403700403546F70
-      030001055769647468021E06486569676874021E0A496D616765576964746802
+      545046300C5456636C496D616765425738025F31044C65667403800403546F70
+      031001055769647468021E06486569676874021E0A496D616765576964746802
       000B496D61676548656967687402000000}
   end
   object Button2: TButton
@@ -225,14 +241,45 @@ object Form1: TForm1
     OnClick = Button2Click
   end
   object AxImageBW83: TAxImageBW8
-    Left = 368
-    Top = 256
+    Left = 336
+    Top = 272
     Width = 30
     Height = 30
     TabOrder = 5
     ControlData = {
-      545046300C5456636C496D61676542573800044C65667403700103546F700300
-      01055769647468021E06486569676874021E0A496D616765576964746802000B
-      496D61676548656967687402000000}
+      545046300C5456636C496D616765425738025F31044C65667403500103546F70
+      031001055769647468021E06486569676874021E0A496D616765576964746802
+      000B496D61676548656967687402000000}
+  end
+  object AxImageBW84: TAxImageBW8
+    Left = 8
+    Top = 256
+    Width = 30
+    Height = 30
+    TabOrder = 6
+    ControlData = {
+      545046300C5456636C496D61676542573800044C656674020803546F70030001
+      055769647468021E06486569676874021E0A496D616765576964746802000B49
+      6D61676548656967687402000000}
+  end
+  object AxImageIntegral1: TAxImageIntegral
+    Left = 8
+    Top = 224
+    Width = 30
+    Height = 30
+    TabOrder = 7
+    ControlData = {
+      54504630115456636C496D616765496E74656772616C00044C65667402080354
+      6F7003E000055769647468021E06486569676874021E0000}
+  end
+  object AxImageALops1: TAxImageALops
+    Left = 40
+    Top = 224
+    Width = 30
+    Height = 30
+    TabOrder = 8
+    ControlData = {
+      545046300E5456636C496D616765414C6F707300044C656674022803546F7003
+      E000055769647468021E06486569676874021E0000}
   end
 end

@@ -8,6 +8,7 @@
 #pragma package(smart_init)
 #pragma link "AxAltairUDrv_OCX"
 #pragma link "AxOvkBase_OCX"
+#pragma link "AxOvkImage_OCX"
 #pragma resource "*.dfm"
 TForm1 *Form1;
 //---------------------------------------------------------------------------
@@ -34,6 +35,7 @@ TForm1 *Form1;
   int CaptureCount;
   int MyMidQuickCount;
   int QuickSortQuickCount;
+  int MidSortErrorCount;
 //---------------------------------------------------------------------------
 void quickSort(byte number[], int left, int right) {
     if(left < right) {
@@ -270,8 +272,6 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
         }
     }
 
-
-
     T=AGetTickCount()-T;
     this->Caption = (String)T;
 
@@ -348,6 +348,21 @@ void __fastcall TForm1::AxAltairU1SurfaceFilled(TObject *Sender,long SurfaceHand
      QuickSortQuickCount++;
     Label16->Caption = MyMidQuickCount;
     Label17->Caption = QuickSortQuickCount;
+
+    //
+    AxImageALops1->SubtractAbs(AxImageBW82->VegaHandle,
+                               AxImageBW83->VegaHandle,
+                               AxImageBW84->VegaHandle);
+
+
+    AxImageIntegral1->SrcImageHandle = AxImageBW84->VegaHandle;
+    AxImageIntegral1->Integrate();
+
+    if(AxImageIntegral1->GreenSum>0)
+        MidSortErrorCount++;
+
+    Label18->Caption = MidSortErrorCount;
+
 }
 //---------------------------------------------------------------------------
 
@@ -369,6 +384,7 @@ void __fastcall TForm1::Button2Click(TObject *Sender)
     //
     MyMidQuickCount=0;
     QuickSortQuickCount=0;
+    MidSortErrorCount=0;
     //
     AxAltairU1->Live();
 }
