@@ -49,12 +49,46 @@ __published:	// IDE-managed Components
     TLabel *Label18;
     TLabel *Label19;
     TAxImageALops *AxImageALops1;
+    TButton *Button3;
+    TLabel *Label20;
+    TAxImageC24 *AxImageC241;
+    TAxImageC24 *AxImageC242;
+    TAxImageC24 *AxImageC243;
+    TAxImageC24 *AxImageC244;
+    TButton *Button4;
+    TAxROIC24 *AxROIC241;
+    TAxROIBW8 *AxROIBW81;
     void __fastcall FormCreate(TObject *Sender);
     void __fastcall Button1Click(TObject *Sender);
     void __fastcall AxAltairU1SurfaceFilled(TObject *Sender,
           long SurfaceHandle);
     void __fastcall Button2Click(TObject *Sender);
+    void __fastcall Button3Click(TObject *Sender);
+    void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+    void __fastcall Button4Click(TObject *Sender);
+    void __fastcall Image1MouseDown(TObject *Sender, TMouseButton Button,
+          TShiftState Shift, int X, int Y);
+    void __fastcall Image1MouseMove(TObject *Sender, TShiftState Shift,
+          int X, int Y);
+    void __fastcall Image1MouseUp(TObject *Sender, TMouseButton Button,
+          TShiftState Shift, int X, int Y);
 private:	// User declarations
+    int CaptureCount;
+    long MyMidQuickCount;
+    long QuickSortQuickCount;
+    double Method1_T, Method1_AvgT;
+    double Method2_T, Method2_AvgT;
+    byte* SrcPtr;
+    int SrcWidth;
+    int SrcHeight;
+    int SrcRowPitch;
+    byte* DstImagePtr;
+    int DstRowPitch;
+    long MidSortErrorCount;
+    int ColorDepth;
+
+    int IsMouseDownFlag;
+    TxAxHitHandle eHT;
 public:		// User declarations
     __fastcall TForm1(TComponent* Owner);
     void TForm1::PrintArr(byte Arr[]);

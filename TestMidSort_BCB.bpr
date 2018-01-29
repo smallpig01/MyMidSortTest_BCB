@@ -4,7 +4,7 @@
   <MACROS>
     <VERSION value="BCB.06.00"/>
     <PROJECT value="TestMidSort_BCB.exe"/>
-    <OBJFILES value="TestMidSort_BCB.obj Main.obj"/>
+    <OBJFILES value="TestMidSort_BCB.obj Main.obj MedianFilter.obj AGetTickCount.obj"/>
     <RESFILES value="TestMidSort_BCB.res"/>
     <DEFFILE value=""/>
     <RESDEPEN value="$(RESFILES) Main.dfm"/>
@@ -50,6 +50,8 @@
       <FILE FILENAME="TestMidSort_BCB.res" FORMNAME="" UNITNAME="TestMidSort_BCB.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="TestMidSort_BCB.cpp" FORMNAME="" UNITNAME="TestMidSort_BCB" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Main.cpp" FORMNAME="Form1" UNITNAME="Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MedianFilter.cpp" FORMNAME="" UNITNAME="MedianFilter" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AGetTickCount.cpp" FORMNAME="" UNITNAME="AGetTickCount" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>
